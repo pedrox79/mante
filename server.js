@@ -1,7 +1,7 @@
-const express=require("express");
-const path=require("path");
+const express=require('express');
+const path=require('path');
 const app=express();
-app.use(express.static(path.join(__dirname,"public")));
-app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.use(express.static(path.join(__dirname,'public')));
+app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'public','index.html')));
 const PORT=process.env.PORT||3000;
-app.listen(PORT,()=>console.log("Matemán en",PORT));
+app.listen(PORT,()=>console.log('Matemán listo en puerto',PORT));

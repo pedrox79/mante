@@ -1,1 +1,167 @@
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#7dd3fc,#c4b5fd);display:flex;justify-content:center;align-items:center;min-height:100vh}.container{background:#fff;padding:32px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.15);width:min(92%,480px)}button{width:100%;padding:14px;border:none;border-radius:12px;background:#4338ca;color:#fff}input{width:100%;padding:14px;margin:10px 0;border:1px solid #ddd;border-radius:12px}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.center-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.course-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-group {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.primary { background: #3498db; color: white; }
+.btn.primary:hover { background: #2980b9; }
+.btn.secondary { background: #ecf0f1; color: #2c3e50; }
+.btn.help-btn { background: #f39c12; color: white; }
+.btn.sm { padding: 0.4rem 0.8rem; font-size: 0.9rem; }
+.full-width { width: 100%; }
+
+.progress-container {
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #2ecc71;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.problem-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.math-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.feedback.success { color: #2ecc71; }
+.feedback.error { color: #e74c3c; }
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 550px;
+  width: 90%;
+}
+
+.help-body {
+  margin: 1.5rem 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ranking-table th, .ranking-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
